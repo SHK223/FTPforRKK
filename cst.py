@@ -26,7 +26,7 @@ while True:
         print ("tm: ", buf)
         d = buf.split(',')
         if 'analyse' in d[0]:
-            listsys = [d[1][3:-1],d[2][2:-1],d[3][2:-1],d[4][2:-1],d[5][2:-1],d[6][2:-1],d[7][2:-1],d[8][2:-1],d[9][2:-1],d[10][2:-1],d[11][2:-2]]
+            listsys = [d[i+1][2:-1] for i in range(11)]
             print(listsys[x])
             host = d[12]
             port = d[13]
