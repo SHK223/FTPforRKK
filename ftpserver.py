@@ -75,7 +75,7 @@ def main():
             buf = input(">>")
             s.send(buf.encode())
             if buf == "run":
-                ef = ['C:\\Учеба\\payloadDownloader\\multiThread\\analyse.py', listsys, host, port]
+                ef = ['analyse', listsys, host, port]
                 d = str(ef)[1:-1]
                 s.send(d.encode())
                 break
